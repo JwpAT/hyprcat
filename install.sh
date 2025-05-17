@@ -1,0 +1,11 @@
+#!/bin/sh
+
+echo "yay and sddm are not installed. Installing..."
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+
+yay -S --needed - < packages
