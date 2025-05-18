@@ -12,4 +12,8 @@ yay -S --needed - < packages
 
 #add config copy  below
 
+systemctl enable sddm
+systemctl enable bluetooth.service
+systemctl start bluetooth.service
+
 chmod +x ~/.config/scripts/wireless-menu.sh
