@@ -9,3 +9,7 @@ cd ..
 rm -rf yay
 
 yay -S --needed - < packages
+
+#add config copy  below
+
+chmod +x ~/.config/scripts/wireless-menu.sh
